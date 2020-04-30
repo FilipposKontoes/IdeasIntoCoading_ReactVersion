@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/IdeasIntoCoading_ReactVersion/static/css/main.de2d0af7.chunk.css",
+    "main.js": "/IdeasIntoCoading_ReactVersion/static/js/main.edc04299.chunk.js",
+    "main.js.map": "/IdeasIntoCoading_ReactVersion/static/js/main.edc04299.chunk.js.map",
+    "runtime-main.js": "/IdeasIntoCoading_ReactVersion/static/js/runtime-main.714c62ad.js",
+    "runtime-main.js.map": "/IdeasIntoCoading_ReactVersion/static/js/runtime-main.714c62ad.js.map",
+    "static/css/2.de424728.chunk.css": "/IdeasIntoCoading_ReactVersion/static/css/2.de424728.chunk.css",
+    "static/js/2.d384a587.chunk.js": "/IdeasIntoCoading_ReactVersion/static/js/2.d384a587.chunk.js",
+    "static/js/2.d384a587.chunk.js.map": "/IdeasIntoCoading_ReactVersion/static/js/2.d384a587.chunk.js.map",
+    "index.html": "/IdeasIntoCoading_ReactVersion/index.html",
+    "precache-manifest.318f91e50bfe4f00f7738dc34e9e0f88.js": "/IdeasIntoCoading_ReactVersion/precache-manifest.318f91e50bfe4f00f7738dc34e9e0f88.js",
+    "service-worker.js": "/IdeasIntoCoading_ReactVersion/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/IdeasIntoCoading_ReactVersion/static/css/2.de424728.chunk.css.map",
+    "static/css/main.de2d0af7.chunk.css.map": "/IdeasIntoCoading_ReactVersion/static/css/main.de2d0af7.chunk.css.map",
+    "static/js/2.d384a587.chunk.js.LICENSE.txt": "/IdeasIntoCoading_ReactVersion/static/js/2.d384a587.chunk.js.LICENSE.txt",
+    "static/media/1075605a-6f18-4f8c-bdc0-ff6620554bb1DeathNote.png": "/IdeasIntoCoading_ReactVersion/static/media/1075605a-6f18-4f8c-bdc0-ff6620554bb1DeathNote.4fbc9e4e.png",
+    "static/media/App.css": "/IdeasIntoCoading_ReactVersion/static/media/homepage.1499e33d.jpg",
+    "static/media/homepagev2.png": "/IdeasIntoCoading_ReactVersion/static/media/homepagev2.afdaf120.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.714c62ad.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.d384a587.chunk.js",
+    "static/css/main.de2d0af7.chunk.css",
+    "static/js/main.edc04299.chunk.js"
+  ]
+}
