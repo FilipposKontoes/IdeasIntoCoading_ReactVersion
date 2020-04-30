@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-md-8 col-xl-9">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-actions float-right">
+                            <div class="dropdown show">
+                                <a href="#" data-toggle="dropdown" data-display="static">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-more-horizontal align-middle">
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                    </svg>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-0">Activities</h5>
+                    </div>
+                    <div class="card-body h-100" id="newsfeed">
+
+                        @foreach (var item in Model)
+                        {
+                        if (item.GetType() == typeof(Follow))
+                        {
+                        <div class="media">
+                            <div class="media-body">
+                                <small class="float-right text-navy">@(item.TimeStamp)</small>
+                                <strong>@((item as Follow).Follower.User.FullName)</strong> started following
+                                <strong>@((item as Follow).Followee.User.FullName)</strong>
+                                <br>
+                                <small class="text-muted">Today 7:51 pm</small>
+                                <br>
+
+                            </div>
+                        </div>
+
+
+
+                        }
+                        else if (item.GetType() == typeof(Project))
+                        {
+                        <div class="media">
+                            <img src="~/Content/Images/ProfilePicture/@((item as Project).Admin.ID)/@((item as Project).Admin.Picture)"
+                                width="36" height="36" class="rounded-circle mr-2"
+                                alt="@((item as Project).Admin.User.FullName)">
+                            <div class="media-body">
+                                <small class="float-right text-navy">30m ago</small>
+                                <strong>@((item as Project).Admin.User.FullName)</strong> created <strong>@((item as
+                                    Project).Title)</strong>
+                                <br>
+                                <small class="text-muted">Today 7:21 pm</small>
+
+                                <div class="border text-sm text-muted p-2 mt-1">
+                                    @((item as Project).Description)
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        }
+                        else
+                        {
+                        <div class="media">
+                            <img src="~/Content/Images/ProfilePicture/@((item as Comment).Developer.ID)/@((item as Comment).Developer.Picture)"
+                                width="36" height="36" class="rounded-circle mr-2"
+                                alt="@((item as Comment).Project.Admin.User.FullName)">
+                            <div class="media-body">
+                                <small class="float-right text-navy">30m ago</small>
+                                <strong>@((item as Comment).Developer.User.FullName)</strong> commented at
+                                <strong>@((item as Comment).Project.Title)</strong>
+                                <br>
+                                <small class="text-muted">Today 7:21 pm</small>
+
+                                <div class="border text-sm text-muted p-2 mt-1">
+                                    @((item as Comment).Project.Description)
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
