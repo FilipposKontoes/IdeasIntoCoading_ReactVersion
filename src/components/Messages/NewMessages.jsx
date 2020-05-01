@@ -5,9 +5,9 @@ class NewMessages extends Component{
     constructor(props){
         super(props)
             this.state={
-                // NewMessages:{
+                NewMessages:{
 
-                // }
+                }
             }
           
         
